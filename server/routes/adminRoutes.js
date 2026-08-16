@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 // 1. Create a Student or Teacher account
@@ -51,4 +51,4 @@ router.delete('/exams/:examId', async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

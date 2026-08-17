@@ -1,21 +1,29 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
+import dns from "dns";
+
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
-import dns from "dns";
-dns.setServers(["1.1.1.1", "8.8.8.8"]);
+import studentRoutes from "./routes/studentRoutes.js";
+
 dotenv.config();
 
-const app = express();
+dns.setServers(["1.1.1.1", "8.8.8.8"]);
 
-// Connect to MongoDB
-connectDB();
+const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
+
+// Connect to MongoDB
+connectDB();
+
+// Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/student", studentRoutes);
+
 // Test route
 app.get("/", (req, res) => {
   res.status(200).json({

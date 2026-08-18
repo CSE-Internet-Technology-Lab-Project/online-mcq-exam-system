@@ -1,0 +1,290 @@
+{
+  "users": [
+    {
+      "_id": "user-admin-1",
+      "name": "System Admin",
+      "email": "admin@exam.com",
+      "password": "admin123",
+      "role": "admin",
+      "status": "active",
+      "createdAt": "2026-01-15T10:00:00.000Z"
+    },
+    {
+      "_id": "user-teacher-1",
+      "name": "John Teacher",
+      "email": "teacher@exam.com",
+      "password": "teacher123",
+      "role": "teacher",
+      "status": "active",
+      "createdAt": "2026-01-15T10:00:00.000Z"
+    },
+    {
+      "_id": "user-student-1",
+      "name": "Alice Student",
+      "email": "student@exam.com",
+      "password": "student123",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-01-16T10:00:00.000Z"
+    },
+    {
+      "_id": "user-student-2",
+      "name": "Bob Student",
+      "email": "bob@exam.com",
+      "password": "student123",
+      "role": "student",
+      "status": "active",
+      "createdAt": "2026-01-17T10:00:00.000Z"
+    }
+  ],
+  "exams": [
+    {
+      "_id": "exam-ds-1",
+      "title": "Data Structures & Algorithms",
+      "description": "Test your knowledge of arrays, linked lists, stacks, queues, trees, and sorting algorithms.",
+      "duration": 30,
+      "totalMarks": 10,
+      "createdBy": "user-teacher-1",
+      "status": "published",
+      "createdAt": "2026-02-01T08:00:00.000Z"
+    },
+    {
+      "_id": "exam-dbms-1",
+      "title": "Database Management Systems",
+      "description": "Covers SQL, normalization, transactions, indexing, and relational database concepts.",
+      "duration": 25,
+      "totalMarks": 10,
+      "createdBy": "user-teacher-1",
+      "status": "published",
+      "createdAt": "2026-02-05T08:00:00.000Z"
+    },
+    {
+      "_id": "exam-os-1",
+      "title": "Operating Systems",
+      "description": "Processes, threads, memory management, scheduling, and synchronization concepts.",
+      "duration": 20,
+      "totalMarks": 10,
+      "createdBy": "user-teacher-1",
+      "status": "draft",
+      "createdAt": "2026-02-10T08:00:00.000Z"
+    }
+  ],
+  "questions": [
+    {
+      "_id": "q-ds-1",
+      "examId": "exam-ds-1",
+      "questionText": "What is the time complexity of accessing an element in an array by index?",
+      "options": ["O(n)", "O(log n)", "O(1)", "O(n²)"],
+      "correctAnswer": 2,
+      "marks": 1,
+      "order": 0
+    },
+    {
+      "_id": "q-ds-2",
+      "examId": "exam-ds-1",
+      "questionText": "Which data structure uses LIFO (Last In First Out) principle?",
+      "options": ["Queue", "Stack", "Tree", "Graph"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 1
+    },
+    {
+      "_id": "q-ds-3",
+      "examId": "exam-ds-1",
+      "questionText": "What is the worst-case time complexity of Quick Sort?",
+      "options": ["O(n log n)", "O(n)", "O(n²)", "O(log n)"],
+      "correctAnswer": 2,
+      "marks": 1,
+      "order": 2
+    },
+    {
+      "_id": "q-ds-4",
+      "examId": "exam-ds-1",
+      "questionText": "Which traversal visits the root node first?",
+      "options": ["Inorder", "Preorder", "Postorder", "Level order"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 3
+    },
+    {
+      "_id": "q-ds-5",
+      "examId": "exam-ds-1",
+      "questionText": "A binary search tree requires elements to be in what order?",
+      "options": ["Random", "Sorted", "Reverse sorted", "Any order"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 4
+    },
+    {
+      "_id": "q-ds-6",
+      "examId": "exam-ds-1",
+      "questionText": "Which sorting algorithm is stable?",
+      "options": ["Quick Sort", "Heap Sort", "Merge Sort", "Selection Sort"],
+      "correctAnswer": 2,
+      "marks": 1,
+      "order": 5
+    },
+    {
+      "_id": "q-ds-7",
+      "examId": "exam-ds-1",
+      "questionText": "What is the maximum number of nodes at level L in a binary tree (root at level 0)?",
+      "options": ["L", "2L", "2^L", "L²"],
+      "correctAnswer": 2,
+      "marks": 1,
+      "order": 6
+    },
+    {
+      "_id": "q-ds-8",
+      "examId": "exam-ds-1",
+      "questionText": "Which data structure is best for implementing BFS?",
+      "options": ["Stack", "Queue", "Heap", "Array"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 7
+    },
+    {
+      "_id": "q-ds-9",
+      "examId": "exam-ds-1",
+      "questionText": "What is a hash collision?",
+      "options": [
+        "When hash function returns negative value",
+        "When two keys map to same index",
+        "When table is full",
+        "When key is null"
+      ],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 8
+    },
+    {
+      "_id": "q-ds-10",
+      "examId": "exam-ds-1",
+      "questionText": "Which of the following is NOT a linear data structure?",
+      "options": ["Array", "Linked List", "Tree", "Queue"],
+      "correctAnswer": 2,
+      "marks": 1,
+      "order": 9
+    },
+    {
+      "_id": "q-dbms-1",
+      "examId": "exam-dbms-1",
+      "questionText": "Which SQL command is used to retrieve data from a database?",
+      "options": ["INSERT", "UPDATE", "SELECT", "DELETE"],
+      "correctAnswer": 2,
+      "marks": 1,
+      "order": 0
+    },
+    {
+      "_id": "q-dbms-2",
+      "examId": "exam-dbms-1",
+      "questionText": "Which normal form removes partial dependency?",
+      "options": ["1NF", "2NF", "3NF", "BCNF"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 1
+    },
+    {
+      "_id": "q-dbms-3",
+      "examId": "exam-dbms-1",
+      "questionText": "ACID property 'I' stands for:",
+      "options": ["Integrity", "Isolation", "Indexing", "Integration"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 2
+    },
+    {
+      "_id": "q-dbms-4",
+      "examId": "exam-dbms-1",
+      "questionText": "Which key uniquely identifies each record in a table?",
+      "options": ["Foreign Key", "Primary Key", "Candidate Key", "Alternate Key"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 3
+    },
+    {
+      "_id": "q-dbms-5",
+      "examId": "exam-dbms-1",
+      "questionText": "Which JOIN returns all rows from both tables?",
+      "options": ["INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL OUTER JOIN"],
+      "correctAnswer": 3,
+      "marks": 1,
+      "order": 4
+    },
+    {
+      "_id": "q-dbms-6",
+      "examId": "exam-dbms-1",
+      "questionText": "An index in a database is used to:",
+      "options": [
+        "Store backup data",
+        "Speed up data retrieval",
+        "Encrypt data",
+        "Delete duplicate rows"
+      ],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 5
+    },
+    {
+      "_id": "q-dbms-7",
+      "examId": "exam-dbms-1",
+      "questionText": "Which constraint ensures a column cannot have NULL values?",
+      "options": ["UNIQUE", "NOT NULL", "CHECK", "DEFAULT"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 6
+    },
+    {
+      "_id": "q-dbms-8",
+      "examId": "exam-dbms-1",
+      "questionText": "In ER diagram, a rectangle represents:",
+      "options": ["Attribute", "Entity", "Relationship", "Key"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 7
+    },
+    {
+      "_id": "q-dbms-9",
+      "examId": "exam-dbms-1",
+      "questionText": "Which command is used to remove a table from the database?",
+      "options": ["DELETE", "DROP", "TRUNCATE", "REMOVE"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 8
+    },
+    {
+      "_id": "q-dbms-10",
+      "examId": "exam-dbms-1",
+      "questionText": "Which type of database stores data in tables with rows and columns?",
+      "options": ["NoSQL", "Relational", "Graph", "Document"],
+      "correctAnswer": 1,
+      "marks": 1,
+      "order": 9
+    }
+  ],
+  "results": [
+    {
+      "_id": "result-dbms-alice",
+      "studentId": "user-student-1",
+      "examId": "exam-dbms-1",
+      "answers": [
+        { "questionId": "q-dbms-1", "selectedOption": 2 },
+        { "questionId": "q-dbms-2", "selectedOption": 1 },
+        { "questionId": "q-dbms-3", "selectedOption": 1 },
+        { "questionId": "q-dbms-4", "selectedOption": 1 },
+        { "questionId": "q-dbms-5", "selectedOption": 0 },
+        { "questionId": "q-dbms-6", "selectedOption": 1 },
+        { "questionId": "q-dbms-7", "selectedOption": 1 },
+        { "questionId": "q-dbms-8", "selectedOption": 1 },
+        { "questionId": "q-dbms-9", "selectedOption": 1 },
+        { "questionId": "q-dbms-10", "selectedOption": 1 }
+      ],
+      "score": 9,
+      "totalMarks": 10,
+      "percentage": 90,
+      "startedAt": "2026-02-08T10:00:00.000Z",
+      "submittedAt": "2026-02-08T10:22:00.000Z",
+      "status": "submitted"
+    }
+  ],
+  "sessions": []
+}
